@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hoguera.png-92b0901745471a380539ca86f18f8e57.stex"
+path="res://.import/vida.png-795bfd38d0aa43bd22b9419103b571f2.stex"
 
 [deps]
 
-source_file="res://assets/hoguera.png"
-source_md5="4d0e0b9aaac49d4a5b677142fc57edb2"
+source_file="res://assets/vida.png"
+source_md5="4347beef68b4b41ee69918d2dd8db152"
 
-dest_files=[ "res://.import/hoguera.png-92b0901745471a380539ca86f18f8e57.stex" ]
-dest_md5="a4bf11c7d04d5cd68810c1a860b27793"
+dest_files=[ "res://.import/vida.png-795bfd38d0aa43bd22b9419103b571f2.stex" ]
+dest_md5="3c60c23d99a8e94fa54d6522c0f8009c"
 
 [params]
 
