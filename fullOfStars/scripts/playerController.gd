@@ -12,7 +12,7 @@ onready var nodoHoguera
 # Para GUI
 onready var nodoVida
 var nodoLabelInfo
-var puntosSalud
+var puntosVida
 
 func _ready():
 	movimiento = Vector2()
@@ -26,9 +26,11 @@ func _ready():
 	puntosVida = 12
 	nodoLabelInfo = Label.new()
 	
+	set_process(true)
+	
 	pass
 
-func _physics_process(delta):
+func _process(delta):
 	
 	if Input.is_action_pressed("ui_left") and !is_on_wall():
 		movimiento.x = -velocidad
@@ -71,3 +73,7 @@ func setAnimacion(direccion):
 			animacionElegida = "idle_derecha"
 
 	return animacionElegida
+	
+func cambiarTexto (nuevoTexto):
+	nodoLabelInfo.text = nuevoTexto
+	pass
