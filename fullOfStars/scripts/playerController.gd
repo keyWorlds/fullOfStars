@@ -9,10 +9,6 @@ var animacion
 var animacionEstatica
 # Interactuando con la hoguera
 onready var nodoHoguera
-# Para GUI
-onready var nodoVida
-var nodoLabelInfo
-var puntosVida
 
 func _ready():
 	movimiento = Vector2()
@@ -23,8 +19,6 @@ func _ready():
 	nodoHoguera = get_node("../Bonfire")
 	sprite = get_node("AnimatedSprite")
 	
-	puntosVida = 12
-	nodoLabelInfo = get_node("../CanvasLayer/EstadoLabel")
 	
 	set_process(true)
 	
@@ -73,7 +67,3 @@ func setAnimacion(direccion):
 			animacionElegida = "idle_derecha"
 
 	return animacionElegida
-	
-func cambiarTexto (nuevoTexto):
-	nodoLabelInfo.text = nuevoTexto
-	pass
