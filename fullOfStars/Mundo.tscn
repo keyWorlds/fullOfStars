@@ -8,29 +8,29 @@
 [ext_resource path="res://assets/sprite0_spr_player_down_strip6_4.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprite0_spr_player_down_strip6_5.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprite3_spr_player_up_strip6_0.png" type="Texture" id=8]
-[ext_resource path="res://assets/sprite2_spr_player_left_strip6_0.png" type="Texture" id=9]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_0.png" type="Texture" id=10]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_1.png" type="Texture" id=11]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_2.png" type="Texture" id=12]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_3.png" type="Texture" id=13]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_4.png" type="Texture" id=14]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_5.png" type="Texture" id=15]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_1.png" type="Texture" id=16]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_2.png" type="Texture" id=17]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_3.png" type="Texture" id=18]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_4.png" type="Texture" id=19]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_5.png" type="Texture" id=20]
-[ext_resource path="res://assets/sprite2_spr_player_left_strip6_1.png" type="Texture" id=21]
-[ext_resource path="res://assets/sprite2_spr_player_left_strip6_2.png" type="Texture" id=22]
-[ext_resource path="res://assets/sprite2_spr_player_left_strip6_3.png" type="Texture" id=23]
-[ext_resource path="res://assets/sprite2_spr_player_left_strip6_4.png" type="Texture" id=24]
-[ext_resource path="res://assets/sprite2_spr_player_left_strip6_5.png" type="Texture" id=25]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_0.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_0.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_1.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_2.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_3.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_4.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_5.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_1.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_2.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_3.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_4.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_5.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_0.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprite2_spr_player_left_strip6_0.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprite2_spr_player_left_strip6_1.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprite2_spr_player_left_strip6_2.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprite2_spr_player_left_strip6_3.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprite2_spr_player_left_strip6_4.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprite2_spr_player_left_strip6_5.png" type="Texture" id=26]
 [ext_resource path="res://assets/spr_Obstaculo_0.png" type="Texture" id=27]
 [ext_resource path="res://assets/hoguera.png" type="Texture" id=28]
 [ext_resource path="res://assets/vida.png" type="Texture" id=29]
 [ext_resource path="res://PickUp.gd" type="Script" id=30]
-[ext_resource path="res://assets/sprite7_0.png" type="Texture" id=31]
+[ext_resource path="res://assets/Cherry Marble.png" type="Texture" id=31]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -52,32 +52,32 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
-"name": "idle_izquierda",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 10 ) ],
-"loop": true,
 "name": "idle_derecha",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "correr_derecha",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "correr_arriba",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
-"loop": true,
-"name": "correr_izquierda",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 26 ) ],
+"frames": [ ExtResource( 20 ) ],
 "loop": true,
 "name": "idle_abajo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ) ],
+"loop": true,
+"name": "idle_izquierda",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "correr_izquierda",
 "speed": 5.0
 } ]
 
@@ -337,7 +337,7 @@ texture = ExtResource( 29 )
 
 [node name="Area2D" type="Area2D" parent="." index="5"]
 
-position = Vector2( 209.504, 208.75 )
+position = Vector2( 210.754, 208.125 )
 scale = Vector2( 0.406368, 0.414063 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -350,15 +350,17 @@ script = ExtResource( 30 )
 
 [node name="SpritePickUp" type="Sprite" parent="Area2D" index="0"]
 
-position = Vector2( 3.33496, -2.0325 )
-scale = Vector2( 2.46082, 2.41509 )
+position = Vector2( 4.41976, -2.41763 )
+scale = Vector2( 0.409112, 0.37132 )
 texture = ExtResource( 31 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="1"]
 
-position = Vector2( 1.83636, -1.84674 )
+position = Vector2( 4.60468, -5.46936 )
 rotation = -3.14159
 scale = Vector2( 1.78072, -2.31149 )
 shape = SubResource( 5 )
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 
 

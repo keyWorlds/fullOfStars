@@ -24,7 +24,7 @@ func _ready():
 	sprite = get_node("AnimatedSprite")
 	
 	puntosVida = 12
-	nodoLabelInfo = Label.new()
+	nodoLabelInfo = get_node("../CanvasLayer/EstadoLabel")
 	
 	set_process(true)
 	

@@ -1,14 +1,11 @@
 extends Area2D
 
 func _ready():
-	
 	pass
 
-func _physics_process(delta):
-	
-	if get_overlapping_bodies().size() > 0:
-		for i in range (get_overlapping_bodies().size()):
-			if get_overlapping_bodies()[i].is_in_group("Player"):
-				#get_overlapping_bodies()[i].cambiarTexto("Has recogido algo")
-				queue_free()
+
+func _on_Area2D_body_entered( body ):
+	if body.is_in_group("Player"):
+		queue_free()
+		get_node("../Player").cambiarTexto("Has recogido alimento")
 	pass
