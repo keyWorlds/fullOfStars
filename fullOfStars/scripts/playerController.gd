@@ -10,6 +10,11 @@ var animacionEstatica
 # Interactuando con la hoguera
 onready var nodoHoguera
 
+var puntosVida
+var inventarioFood
+
+onready var menu
+
 func _ready():
 	movimiento = Vector2()
 	velocidad = 50
@@ -19,12 +24,16 @@ func _ready():
 	nodoHoguera = get_node("../Bonfire")
 	sprite = get_node("AnimatedSprite")
 	
+	inventarioFood = 0
+	puntosVida = 10
 	
-	set_process(true)
+	menu = get_node("../CanvasLayer/WindowDialog")
+	
+	set_physics_process(true)
 	
 	pass
 
-func _process(delta):
+func _physics_process(delta):
 	
 	if Input.is_action_pressed("ui_left") and !is_on_wall():
 		movimiento.x = -velocidad
@@ -46,8 +55,13 @@ func _process(delta):
 		movimiento.x = 0
 		movimiento.y = 0
 		animacion = animacionEstatica
-		
-		
+
+	if Input.is_key_pressed(KEY_I):
+		menu.popup()
+		menu.get_node("ItemList").clear()
+		menu.get_node("ItemList").add_item("Alimentos: " + String(inventarioFood))
+		menu.get_node("ItemList").add_item("Puntos de vida: " + String(puntosVida))
+
 	sprite.play(animacion)
 	move_and_slide(movimiento)
 	
