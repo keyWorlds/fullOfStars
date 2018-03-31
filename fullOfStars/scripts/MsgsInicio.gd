@@ -8,7 +8,7 @@ var puntosVida
 func _ready():
 	
 	nodoLabelInfo = get_node("../CanvasLayer/EstadoLabel")
-	cambiarTexto("Un claro del bosque... ¿un nuevo refugio?")
+	cambiarTexto("Solo, perdido... y hambriento")
 	pass
 
 func cambiarTexto (nuevoTexto):

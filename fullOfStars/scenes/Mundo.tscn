@@ -7,25 +7,25 @@
 [ext_resource path="res://assets/sprite2_spr_player_left_strip6_3.png" type="Texture" id=5]
 [ext_resource path="res://assets/sprite2_spr_player_left_strip6_4.png" type="Texture" id=6]
 [ext_resource path="res://assets/sprite2_spr_player_left_strip6_5.png" type="Texture" id=7]
-[ext_resource path="res://assets/sprite2_spr_player_left_strip6_0.png" type="Texture" id=8]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_0.png" type="Texture" id=9]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_1.png" type="Texture" id=10]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_2.png" type="Texture" id=11]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_3.png" type="Texture" id=12]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_4.png" type="Texture" id=13]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_5.png" type="Texture" id=14]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_1.png" type="Texture" id=15]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_2.png" type="Texture" id=16]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_3.png" type="Texture" id=17]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_4.png" type="Texture" id=18]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_5.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_0.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_1.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_2.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_3.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_4.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_5.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_1.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_2.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_3.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_4.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_5.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_0.png" type="Texture" id=19]
 [ext_resource path="res://assets/sprite1_spr_player_right_strip6_0.png" type="Texture" id=20]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_0.png" type="Texture" id=21]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_1.png" type="Texture" id=22]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_2.png" type="Texture" id=23]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_3.png" type="Texture" id=24]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_4.png" type="Texture" id=25]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_5.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprite2_spr_player_left_strip6_0.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_1.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_2.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_3.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_4.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_5.png" type="Texture" id=26]
 [ext_resource path="res://assets/spr_Obstaculo_0.png" type="Texture" id=27]
 [ext_resource path="res://assets/hoguera.png" type="Texture" id=28]
 [ext_resource path="res://scripts/Msgs.gd" type="Script" id=29]
@@ -48,22 +48,22 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "idle_izquierda",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
 "name": "idle_abajo",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "correr_abajo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
 "loop": true,
 "name": "correr_arriba",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"frames": [ ExtResource( 19 ) ],
 "loop": true,
-"name": "correr_derecha",
+"name": "idle_arriba",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 20 ) ],
@@ -73,12 +73,12 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 21 ) ],
 "loop": true,
-"name": "idle_arriba",
+"name": "idle_izquierda",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ],
 "loop": true,
-"name": "correr_abajo",
+"name": "correr_derecha",
 "speed": 5.0
 } ]
 
@@ -97,7 +97,7 @@ extents = Vector2( 10, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 13.9286, 10.045 )
 
-[node name="Mundo" type="Node" index="0"]
+[node name="Mundo" type="Node"]
 
 __meta__ = {
 "_edit_horizontal_guides_": [  ],
@@ -114,7 +114,6 @@ texture = ExtResource( 1 )
 "Player",
 ]]
 
-editor/display_folded = true
 position = Vector2( 287.107, 158.269 )
 scale = Vector2( 0.5, 0.5 )
 input_pickable = false
@@ -339,6 +338,7 @@ texture = ExtResource( 30 )
 
 [node name="WindowDialog" type="WindowDialog" parent="CanvasLayer" index="2"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -379,40 +379,7 @@ select_mode = 0
 icon_mode = 1
 fixed_icon_size = Vector2( 0, 0 )
 
-[node name="PickUp_Food" type="Area2D" parent="." index="5"]
-
-editor/display_folded = true
-position = Vector2( 210.754, 208.125 )
-scale = Vector2( 0.406368, 0.414063 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-script = ExtResource( 31 )
-
-[node name="SpritePickUp" type="Sprite" parent="PickUp_Food" index="0"]
-
-position = Vector2( 4.41976, -2.41763 )
-scale = Vector2( 0.409112, 0.37132 )
-texture = ExtResource( 32 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PickUp_Food" index="1"]
-
-position = Vector2( 4.60468, -5.46936 )
-rotation = -3.14159
-scale = Vector2( 1.78072, -2.31149 )
-shape = SubResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="PickUp_Food2" type="Area2D" parent="." index="6"]
+[node name="PickUp_Food2" type="Area2D" parent="." index="5"]
 
 editor/display_folded = true
 position = Vector2( 360.687, 135.149 )
@@ -444,8 +411,6 @@ shape = SubResource( 5 )
 __meta__ = {
 "_edit_lock_": true
 }
-
-[connection signal="body_entered" from="PickUp_Food" to="PickUp_Food" method="_on_Area2D_body_entered"]
 
 [connection signal="body_entered" from="PickUp_Food2" to="PickUp_Food2" method="_on_Area2D_body_entered"]
 
