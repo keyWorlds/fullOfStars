@@ -9,25 +9,25 @@
 [ext_resource path="res://assets/sprite2_spr_player_left_strip6_3.png" type="Texture" id=7]
 [ext_resource path="res://assets/sprite2_spr_player_left_strip6_4.png" type="Texture" id=8]
 [ext_resource path="res://assets/sprite2_spr_player_left_strip6_5.png" type="Texture" id=9]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_0.png" type="Texture" id=10]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_1.png" type="Texture" id=11]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_2.png" type="Texture" id=12]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_3.png" type="Texture" id=13]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_4.png" type="Texture" id=14]
-[ext_resource path="res://assets/sprite0_spr_player_down_strip6_5.png" type="Texture" id=15]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_1.png" type="Texture" id=16]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_2.png" type="Texture" id=17]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_3.png" type="Texture" id=18]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_4.png" type="Texture" id=19]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_5.png" type="Texture" id=20]
-[ext_resource path="res://assets/sprite3_spr_player_up_strip6_0.png" type="Texture" id=21]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_0.png" type="Texture" id=22]
-[ext_resource path="res://assets/sprite2_spr_player_left_strip6_0.png" type="Texture" id=23]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_1.png" type="Texture" id=24]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_2.png" type="Texture" id=25]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_3.png" type="Texture" id=26]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_4.png" type="Texture" id=27]
-[ext_resource path="res://assets/sprite1_spr_player_right_strip6_5.png" type="Texture" id=28]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_1.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_2.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_3.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_4.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_5.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_0.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_1.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_2.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_3.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_4.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_5.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprite2_spr_player_left_strip6_0.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_1.png" type="Texture" id=22]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_2.png" type="Texture" id=23]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_3.png" type="Texture" id=24]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_4.png" type="Texture" id=25]
+[ext_resource path="res://assets/sprite3_spr_player_up_strip6_5.png" type="Texture" id=26]
+[ext_resource path="res://assets/sprite0_spr_player_down_strip6_0.png" type="Texture" id=27]
+[ext_resource path="res://assets/sprite1_spr_player_right_strip6_0.png" type="Texture" id=28]
 [ext_resource path="res://scripts/Teleport.gd" type="Script" id=29]
 [ext_resource path="res://assets/spr_sombra_0.png" type="Texture" id=30]
 
@@ -49,39 +49,39 @@ animations = [ {
 "name": "correr_izquierda",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ) ],
-"loop": true,
-"name": "idle_abajo",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "correr_abajo",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
-"loop": true,
-"name": "correr_arriba",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 21 ) ],
+"frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "idle_arriba",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 22 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ],
 "loop": true,
-"name": "idle_derecha",
+"name": "correr_derecha",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 23 ) ],
+"frames": [ ExtResource( 21 ) ],
 "loop": true,
 "name": "idle_izquierda",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ],
 "loop": true,
-"name": "correr_derecha",
+"name": "correr_arriba",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ) ],
+"loop": true,
+"name": "idle_abajo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ) ],
+"loop": true,
+"name": "idle_derecha",
 "speed": 5.0
 } ]
 
@@ -90,17 +90,15 @@ animations = [ {
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Mundo" type="Node" index="0"]
+[node name="Mundo" type="Node"]
 
 [node name="Walls" type="Node" parent="." index="0"]
-
-editor/display_folded = true
 
 [node name="Wall" type="StaticBody2D" parent="Walls" index="0"]
 
 editor/display_folded = true
-position = Vector2( 294.916, 92.3378 )
-scale = Vector2( 3.74404, 0.511719 )
+position = Vector2( 296.766, 92.3378 )
+scale = Vector2( 3.80184, 0.511719 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -129,6 +127,7 @@ __meta__ = {
 
 [node name="Wall3" type="StaticBody2D" parent="Walls" index="1"]
 
+editor/display_folded = true
 position = Vector2( 294.916, 276.338 )
 scale = Vector2( 3.74404, 0.511719 )
 input_pickable = false
@@ -159,6 +158,7 @@ __meta__ = {
 
 [node name="Wall2" type="StaticBody2D" parent="Walls" index="2"]
 
+editor/display_folded = true
 position = Vector2( 159.304, 185.217 )
 scale = Vector2( 0.506147, 2.42174 )
 input_pickable = false
@@ -189,6 +189,7 @@ __meta__ = {
 
 [node name="Wall4" type="StaticBody2D" parent="Walls" index="3"]
 
+editor/display_folded = true
 position = Vector2( 426.304, 188.217 )
 scale = Vector2( 0.506147, 2.42174 )
 input_pickable = false
